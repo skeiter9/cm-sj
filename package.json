@@ -1,0 +1,10 @@
+{
+  "name": "san-juan",
+  "version": "0.0.2",
+  "description": "Website de San Juan",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "bootstrap-sass": "~2.3.2"
+  }
+}
