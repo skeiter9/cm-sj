@@ -1,0 +1,21 @@
+{
+  "name": "san-juan",
+  "version": "0.0.2",
+  "authors": [
+    "skeiter9 <skeiter97@gmail.com>"
+  ],
+  "description": "Website",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "html5-boilerplate": "~4.3.0",
+    "normalize-css": "~2.1.3",
+    "bootstrap-sass": "~3.0.2"
+  }
+}
