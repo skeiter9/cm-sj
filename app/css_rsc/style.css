@@ -23,7 +23,8 @@ html.lt-ie8 .row{clear:both}
 .padding-left{padding-left:15px}
 .margin-top{margin-top:10px}
 .margin-bottom{margin-bottom:10px}
-.img-responsive{max-width:100%}
+.img-responsive{max-width:100%;}
+html.lt-ie9 .img-responsive{max-width:none;width:100%}
 .color-purple{color:#662c90}
 .color-green{color:#a9cf46}
 .color-green2{color:#00a859}
