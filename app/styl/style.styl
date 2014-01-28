@@ -1,9 +1,11 @@
 @import 'vendor.styl'
 @import 'mixins.styl'
+
 color_green=#a9cf46 
 color_green2=#00A859
 color_gray =#E6E7E9
-color_brow =#606062 
+color_brow =#606062
+
 /************ RESET **************/
 *
 	box-sizing border-box
@@ -20,6 +22,16 @@ h1,h2,h3,h4,h5,h6
 blockquote
 	padding 0
 /********************* HELPERS *************/
+.ie-message
+	background-color orange
+	text-align center 
+	width 700px
+	margin 5px auto
+	padding 2px
+	color white
+	font-size 15px
+html.lt-ie8 .row 
+	clear both
 .bck-san-juan
 	background-color #d0e0ac
 .bck-header
@@ -38,7 +50,6 @@ blockquote
 	background-image url('../images/bg-header-contactanos.jpg')
 	background-position top center
 	background-repeat no-repeat
-
 .bck-white
 	background-color #ffffff
 .bck-green
@@ -56,7 +67,7 @@ blockquote
 .border 
 	border 1px solid rgba(0, 0, 0, .3)
 .padding
-	padding 35px 60px
+	padding 15px 40px
 .padding-left
 	padding-left 15px	
 .margin-top
@@ -112,6 +123,10 @@ blockquote
 	transition: all 0.2s ease
 	&:hover
 		transform scale(1.1)
+	.lt-ie9 &
+		left -100px
+	.lt-ie8 &
+		left 70px	
 .img-aside
 	block-center()
 	margin-top 10px
@@ -132,6 +147,8 @@ blockquote
 	background-repeat: no-repeat
 	z-index: 2
 	pointer-events none
+	.lt-ie9 &
+		display none
 .nav
 	& a 
 		display block
@@ -141,8 +158,12 @@ blockquote
 		marging 5px 0
 		padding-left 790px
 		overflow hidden
+		html.lt-ie9 &
+			padding-left 0
 		& a 
 			margin-right 8%
+			html.lt-ie9 &
+				margin 15px
 			& span
 				position: relative
 				top -10px
@@ -164,6 +185,9 @@ blockquote
 	&.main 
 		display block
 		margin-top 113px
+		html.lt-ie9 &
+			margin-top 0
+			padding-left 33%
 		& a 
 			width (65/5)%
 			margin-left .5%
@@ -174,6 +198,10 @@ blockquote
 			color white
 			position: relative
 			font-weight bold
+			html.lt-ie9 &
+				margin-top 100px
+				margin-right 0
+				width 17.75%	
 			&.current
 				background-color #a8cf45
 				padding 70px 0 20px 0
@@ -239,15 +267,8 @@ blockquote
 .margin-small
 	margin 20px
 .border-main
-	&:before
-		content ''
-		display block
-		position: absolute
-		top: 40px
-		left 1.5%
-		border 2px dotted color_gray
-		width 97%
-		height 85%
+	border 2px dotted rgba(0, 0, 0, .2)
+	margin 20px
 .border-title
 	padding-bottom 15px
 	border-bottom 2px dotted color_green

@@ -4,6 +4,8 @@ body{color:#3f3f41}
 a{text-decoration:none}
 h1,h2,h3,h4,h5,h6{margin:0}
 blockquote{padding:0}
+.ie-message{background-color:#ffa500;text-align:center;width:700px;margin:5px auto;padding:2px;color:#fff;font-size:15px}
+html.lt-ie8 .row{clear:both}
 .bck-san-juan{background-color:#d0e0ac}
 .bck-header{background-image:url("../images/bg-header.jpg");background-position:top center;background-repeat:no-repeat}
 .bck-header-san-juan{background-image:url("../images/bg-header-san-juan.jpg");background-position:top center;background-repeat:no-repeat}
@@ -17,7 +19,7 @@ blockquote{padding:0}
 .text-right{text-align:right}
 .text-small{font-size:12px}
 .border{border:1px solid rgba(0,0,0,0.3)}
-.padding{padding:35px 60px}
+.padding{padding:15px 40px}
 .padding-left{padding-left:15px}
 .margin-top{margin-top:10px}
 .margin-bottom{margin-bottom:10px}
@@ -27,9 +29,11 @@ blockquote{padding:0}
 .color-green2{color:#00a859}
 .display-block{display:block}
 .display-none{display:none}
-.container{width:1000px;display:block;margin-left:auto;margin-right:auto;}
+.container{width:1000px;display:block;margin-left:auto;margin-right:auto;*zoom:1;}
+html.no-js.lt-ie9 .container{display:auto}
 .container:before,.container:after{content:" ";display:table}
 .container:after{clear:both}
+.row{*zoom:1;}
 .row:before,.row:after{content:" ";display:table}
 .row:after{clear:both}
 .figure-producto{position:relative;padding:30px;}
@@ -41,13 +45,19 @@ blockquote{padding:0}
 .figure-producto.galeria img{-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;border:none}
 .img-logo{position:relative;top:70px;left:70px;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease;}
 .img-logo:hover{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1)}
+.lt-ie9 .img-logo{left:-100px}
+.lt-ie8 .img-logo{left:70px}
 .img-aside{display:block;margin-left:auto;margin-right:auto;margin-top:10px;}
+html.no-js.lt-ie9 .img-aside{display:auto}
 .img-aside.logo{margin-top:40px;width:35%}
 .img-aside.picture{-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;border:2px solid #cdcfd3}
-.trazo{display:block;border:none;background-image:url("../images/bg-hr.png");height:147px;position:absolute;top:202px;background-repeat:no-repeat;z-index:2;pointer-events:none}
+.trazo{display:block;border:none;background-image:url("../images/bg-hr.png");height:147px;position:absolute;top:202px;background-repeat:no-repeat;z-index:2;pointer-events:none;}
+.lt-ie9 .trazo{display:none}
 .nav a{display:block;float:left;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
 .nav.social{marging:5px 0;padding-left:790px;overflow:hidden;}
+html.lt-ie9 .nav.social{padding-left:0}
 .nav.social a{margin-right:8%;}
+html.lt-ie9 .nav.social a{margin:15px}
 .nav.social a span{position:relative;top:-10px}
 .nav.social a.item-facebook:hover svg{fill:#1e48aa}
 .nav.social a.item-facebook:hover span{color:#1e48aa}
@@ -55,7 +65,9 @@ blockquote{padding:0}
 .nav.social a.item-twitter:hover span{color:#01a1d1}
 .nav.social svg{width:18px;fill:#4b4b4d}
 .nav.main{display:block;margin-top:113px;}
+html.lt-ie9 .nav.main{margin-top:0;padding-left:33%}
 .nav.main a{width:13%;margin-left:.5%;background-color:#00a859;-webkit-border-radius:0 0 10px 10px;-moz-border-radius:0 0 10px 10px;-ms-border-radius:0 0 10px 10px;-o-border-radius:0 0 10px 10px;border-radius:0 0 10px 10px;text-align:center;padding:45px 0 25px 0;color:#fff;position:relative;font-weight:bold;}
+html.lt-ie9 .nav.main a{margin-top:100px;margin-right:0;width:17.75%}
 .nav.main a.current{background-color:#a8cf45;padding:70px 0 20px 0}
 .nav.main a:first-child{margin-left:33%}
 .nav.main a:last-child{-webkit-border-radius:0 20px 10px 10px;-moz-border-radius:0 20px 10px 10px;-ms-border-radius:0 20px 10px 10px;-o-border-radius:0 20px 10px 10px;border-radius:0 20px 10px 10px;top:20px;padding:25px 0 25px 0;}
@@ -70,7 +82,7 @@ blockquote{padding:0}
 .padding-footer{padding:0 20px}
 .padding-small{padding:20px}
 .margin-small{margin:20px}
-.border-main:before{content:'';display:block;position:absolute;top:40px;left:1.5%;border:2px dotted #e6e7e9;width:97%;height:85%}
+.border-main{border:2px dotted rgba(0,0,0,0.2);margin:20px}
 .border-title{padding-bottom:15px;border-bottom:2px dotted #a9cf46}
 #uno,#dos,#tres{display:none}
 .star{position:absolute;left:0}

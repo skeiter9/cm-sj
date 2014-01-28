@@ -1,6 +1,7 @@
 @import "vendor.styl"
 /************************* FIXS ****************************/
 clearfix() 
+	*zoom: 1
 	&:before,
 	&:after 
 		content " "
@@ -12,7 +13,8 @@ block-center()
 	display block
 	margin-left auto
 	margin-right auto
-
+	html.no-js.lt-ie9 &
+		display auto
 square(X)
 	width X
 	height X

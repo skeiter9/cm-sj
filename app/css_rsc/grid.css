@@ -4,6 +4,7 @@
   padding-left: 1rem;*/
   margin-right: auto;
   margin-left: auto;
+  *zoom: 1;
 }
 
 .container:before,
@@ -24,6 +25,7 @@
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
   position: relative;
+  *zoom: 1;
 }
 
 .row:before,
